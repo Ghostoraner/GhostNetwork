@@ -1,0 +1,6 @@
+scapy==2.5.0
+customtkinter==5.2.1
+requests
+tabulate
+packaging
+
