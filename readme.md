@@ -1,23 +1,27 @@
+#GhostNetwork 🛡️💻
 
-# GhostNetwork 🛡️💻
+**GhostNetwork** — это мощный модульный инструментарий для анализа сети и мониторинга системы, разработанный специально для UNIX-подобных операционных систем (Arch Linux, Debian, macOS и т. д.). Он объединяет возможности профессиональных утилит безопасности с современным высокопроизводительным графическим пользовательским интерфейсом (GUI), построенным на основе CustomTkinter.
 
-**GhostNetwork** is a powerful, modular network analysis and system monitoring toolkit designed specifically for UNIX-like operating systems (Arch Linux, Debian, macOS, etc.). It merges the capabilities of professional security utilities with a modern, high-performance Graphical User Interface (GUI) built on CustomTkinter.
+--
 
----
+## 🚀 Ключевые функции
+- **Обнаружение сети ARP**: идентификация активных устройств в вашей локальной сети в режиме реального времени.
 
-## 🚀 Key Features
-- **ARP Network Discovery**: Real-time identification of active devices within your local network.
-- **Deep Port Scanning**: Identify service versions and open ports using the Nmap engine.
-- **Web Vulnerability Audit**: Scan for server misconfigurations and hidden vulnerabilities using Nikto.
-- **IP Intelligence**: One-click geolocation lookup (Country, City, ISP) and Public IP verification.
-- **Unix System Stats**: Instant monitoring of CPU Load Average and RAM utilization.
-- **Reporting System**: Save terminal outputs directly into organized .txt reports for documentation.
+- **Глубокое сканирование портов**: определение версий служб и открытых портов с помощью движка Nmap.
 
----
+- **Аудит веб-уязвимостей**: сканирование на наличие неправильных настроек сервера и скрытых уязвимостей с помощью Nikto.
 
-## 🛠️ System Prerequisites
+- **IP-аналитика**: поиск геолокации в один клик (страна, город, интернет-провайдер) и проверка публичных IP-адресов.
 
-GhostNetwork acts as a bridge for industry-standard tools. You must install these dependencies on your host system:
+- **Статистика системы Unix**: мгновенный мониторинг средней загрузки ЦП и использования ОЗУ.
+
+- **Система отчетности**: Сохранение результатов работы терминала непосредственно в организованные отчеты в формате .txt для документирования.
+
+--
+
+## 🛠️ Системные требования
+
+GhostNetwork выступает в качестве связующего звена для стандартных отраслевых инструментов. Необходимо установить следующие зависимости в вашей хост-системе:
 
 ### Arch Linux:
 ```bash
@@ -30,7 +34,7 @@ sudo apt update && sudo apt install nmap nikto dirb whois dnsutils procps
 
 ---
 
-## 📦 Installation & Usage
+## 📦 Установка и использование
 
 ```bash
 git clone https://github.com/Ghostoraner/GhostNetwork.git
@@ -43,24 +47,23 @@ sudo python main.py
 
 ---
 
-## 📁 Project Architecture 
+## 📁 Архитектура проекта
 ```
 GhostNetwork/
-├── main.py # Launch GUI
-├── requirements.txt # Dependencies
-├── README.md # Updated documentation
+├── main.py # Запуск графического интерфейса
+├── requirements.txt # Зависимости
+├── README.md # Обновленная документация
 └── core/
-       ├── __init__.py
-       ├── scanner.py # Logic (ARP + Port Scan)
-       └── styles.py # GUI color settings
+    ├── __init__.py
+    ├── scanner.py # Логика (ARP + сканирование портов)
+    └── styles.py # Настройки цвета графического интерфейса
 ```
 
 ---
 
-
-## ✅ Conclusion
-- Author: Ghostoraner
-- Сommunication: reinsss21@gmail.com
+## ✅ Заключение
+- Автор: Ghostoraner
+- Связь: reinsss21@gmail.com
 
 ---
 
