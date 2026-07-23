@@ -17,11 +17,11 @@ class App(ctk.CTk):
         self.title("GhostNetwork v1.0")
         self.geometry("1100x800")
 
-        # Layout
+
         self.grid_columnconfigure(1, weight=1)
         self.grid_rowconfigure(0, weight=1)
 
-        # --- SIDEBAR ---
+      
         self.sidebar = ctk.CTkFrame(self, width=250, corner_radius=0)
         self.sidebar.grid(row=0, column=0, rowspan=2, sticky="nsew")
 
@@ -51,7 +51,7 @@ class App(ctk.CTk):
                                        command=self.clear_logs)
         self.clear_btn.pack(pady=10)
 
-        # --- CONSOLE AREA ---
+    
         self.textbox = ctk.CTkTextbox(self, font=FONTS["terminal"], fg_color="#0a0a0a", text_color="#39ff14")
         self.textbox.grid(row=0, column=1, padx=20, pady=20, sticky="nsew")
 
