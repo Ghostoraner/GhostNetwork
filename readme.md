@@ -42,7 +42,7 @@ cd GhostNetwork
 python -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
-sudo python main.py
+python main.py
 ```
 
 ---
